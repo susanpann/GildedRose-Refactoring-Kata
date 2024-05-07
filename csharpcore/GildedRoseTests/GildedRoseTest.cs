@@ -113,27 +113,27 @@ public class GildedRoseTest
     public void SulfurasQuality_NeverChanges()
     {
         var itemName = "Sulfuras, Hand of Ragnaros";
-        var items = new List<Item> { new Item { Name = itemName, SellIn = 1, Quality = 20 } };
+        var items = new List<Item> { new Item { Name = itemName, SellIn = 1, Quality = 80 } };
         
         var app = new GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
         Assert.That(testItem.Name, Is.EqualTo(itemName));
-        Assert.That(testItem.Quality, Is.EqualTo(20));
+        Assert.That(testItem.Quality, Is.EqualTo(80));
         
         app.UpdateQuality();
 
         var testItemAgain = items[0];
         Assert.That(testItemAgain.Name, Is.EqualTo(itemName));
-        Assert.That(testItemAgain.Quality, Is.EqualTo(20));
+        Assert.That(testItemAgain.Quality, Is.EqualTo(80));
     }
     
     [Test]
     public void SulfurasSellDate_NeverChanges()
     {
         var itemName = "Sulfuras, Hand of Ragnaros";
-        var items = new List<Item> { new Item { Name = itemName, SellIn = 10, Quality = 20 } };
+        var items = new List<Item> { new Item { Name = itemName, SellIn = 10, Quality = 80 } };
         
         var app = new GildedRose(items);
         app.UpdateQuality();
