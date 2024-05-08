@@ -1,5 +1,4 @@
 using GildedRose.Items;
-using GildedRoseKata;
 
 namespace GildedRose.QualityStrategies;
 
