@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using GildedRoseKata;
+using GildedRose.Items;
 using NUnit.Framework;
 
 namespace GildedRoseTests;
@@ -14,7 +14,7 @@ public class GildedRoseTest
         var itemName = "anotheritem-12928";
         var items = new List<Item> { new Item { Name = itemName, SellIn = sellIn, Quality = quality } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -34,7 +34,7 @@ public class GildedRoseTest
     {
         var items = new List<Item> { new Item { Name = itemName, SellIn = sellIn, Quality = quality } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -49,7 +49,7 @@ public class GildedRoseTest
         var itemName = "anotheritem-sdfgrtari";
         var items = new List<Item> { new Item { Name = itemName, SellIn = 10, Quality = 10 } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -64,7 +64,7 @@ public class GildedRoseTest
         var itemName = "anotheritem-23580823";
         var items = new List<Item> { new Item { Name = itemName, SellIn = 0, Quality = 40 } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -79,7 +79,7 @@ public class GildedRoseTest
         var itemName = "Aged Brie";
         var items = new List<Item> { new Item { Name = itemName, SellIn = 1, Quality = 20 } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -94,7 +94,7 @@ public class GildedRoseTest
         var itemName = "Aged Brie";
         var items = new List<Item> { new Item { Name = itemName, SellIn = 0, Quality = 20 } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -109,7 +109,7 @@ public class GildedRoseTest
         var itemName = "Sulfuras, Hand of Ragnaros";
         var items = new List<Item> { new Item { Name = itemName, SellIn = 1, Quality = 80 } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -129,7 +129,7 @@ public class GildedRoseTest
         var itemName = "Sulfuras, Hand of Ragnaros";
         var items = new List<Item> { new Item { Name = itemName, SellIn = 10, Quality = 80 } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -152,7 +152,7 @@ public class GildedRoseTest
         var itemName = "Backstage passes to a TAFKAL80ETC concert";
         var items = new List<Item> { new Item { Name = itemName, SellIn = sellIn, Quality = quality } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -170,7 +170,7 @@ public class GildedRoseTest
         var itemName = "Backstage passes to a TAFKAL80ETC concert";
         var items = new List<Item> { new Item { Name = itemName, SellIn = sellIn, Quality = quality } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -190,7 +190,7 @@ public class GildedRoseTest
         var itemName = "Backstage passes to a TAFKAL80ETC concert";
         var items = new List<Item> { new Item { Name = itemName, SellIn = sellIn, Quality = quality } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -209,7 +209,7 @@ public class GildedRoseTest
         var itemName = "Backstage passes to a TAFKAL80ETC concert";
         var items = new List<Item> { new Item { Name = itemName, SellIn = sellIn, Quality = quality } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
@@ -226,7 +226,7 @@ public class GildedRoseTest
     {
         var items = new List<Item> { new Item { Name = itemName, SellIn = sellIn, Quality = quality } };
         
-        var app = new GildedRose(items);
+        var app = new GildedRose.GildedRose(items);
         app.UpdateQuality();
 
         var testItem = items[0];
