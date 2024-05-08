@@ -217,4 +217,22 @@ public class GildedRoseTest
         Assert.That(testItem.SellIn, Is.EqualTo(sellIn - 1));
         Assert.That(testItem.Quality, Is.EqualTo(expectedQuality));
     }
+    
+    [Theory]
+    [TestCase("Conjured Brie",10, 50, 48)]
+    [TestCase("Conjured backstage pass", -2, 10, 6)]
+    [TestCase("Conjured sulfuras", 1, 0, 0)]
+    public void ConjuredItemDegrades_TwiceAsFast(string itemName, int sellIn, int quality, int expectedQuality)
+    {
+        var items = new List<Item> { new Item { Name = itemName, SellIn = sellIn, Quality = quality } };
+        
+        var app = new GildedRose(items);
+        app.UpdateQuality();
+
+        var testItem = items[0];
+        Assert.That(testItem.Name, Is.EqualTo(itemName));
+        Assert.That(testItem.SellIn, Is.EqualTo(sellIn - 1));
+        Assert.That(testItem.Quality, Is.EqualTo(expectedQuality)); 
+    }
+
 } 
